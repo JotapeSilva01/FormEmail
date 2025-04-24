@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        br {
+            display: none; /* oculta as quebras de linha visuais */
+        }
+    </style>
+</head>
+<body>
+    <!--  action - rece o endereço do arquivo/ página para onde os dados serão enviados.
+    method - determina como os dados seerão enviados. -->
+    <form action="https://formsubmit.co/joaopedrodasilva874@gmail.com" method="post">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+    <input type="hidden" name="_captcha" value="false">
+        <!--  1 Formulário -->
+        <!--  Nome  -->
+        <label for="name">Nome </label>
+        <input type="text" name="name" id="name" placeholder="Nome e sobrenome" maxlength="30" autofocus required autocomplete="on">
+        <!--  Maxlength: VARCHAR (30) - Limita o tanto de caracteres -->
+
+        <!-- E-mail -->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" maxlength="50" placeholder="Email@gmail.com" requerid autocomplete="on">
+        <!-- autocomplete: Quando o usuário preenche o campo e envia o formulário, os dados ficam salvos; 
+         assim, caso ele queira enviar o formulário novamente, não é necessário redigitar todos os dados. -->
+
+         <!-- Telefone  -->
+         <label for="tel">Telefone</label>
+         <input type="tel" name="tel" id="tel" maxlength="11" placeholder="(XX) XXXXX-XXXX "  required autocomplete="off">
+
+         <!--  Curriculo  -->
+         <label for="Curriculum">Currículo</label>
+         <input type="file" name="curriculum" id="curriculum">
+
+         <!-- Mensagem -->
+         <label for="message">Mensagem</label>
+         <textarea name="message" id="message" rows="5" cols="20" maxlength="200" placeholder="Digite aqui a sua mensagem "></textarea>
+
+         <div style="text-align: center;">
+            <input type="submit" id="submit" style="border-radius: 35px; width: 150px; height: 50px;">
+        </div>
+    </form>
+</body>
+</html>
