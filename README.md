@@ -1,20 +1,20 @@
-# FormEmail-formulário
+# formEmail
 
-  ## Criação do Formulário
-     - Foi usado HTML puro, com a tag <form>.
+## Criação do formulário:
+   ### Uso da tag form:
+  - Para a criação do formulário, foi usada a tag form, que permite usar inputs do tipo submit, para enviar os dados;
+  - Também foi usado o método post para que as informações fossem enviadas, sem que sejam expostas;
+  - Para que o submit funcione corretamente, foi adicionado o método name em todos os inputs de teto.
+ 
 
-     - Dentro do <form>, foram colocados campos como:
+  ### Funcionalidade do form:
+  - Depois da criação do formulário, foi adicionada a API formSubmit, que permite que os dados adicionados ao formulário sejam enviados ao email;
 
-        - <input type="text"> → para o nome
-
-        - <input type="email"> → para o e-mail
-          
-        - <input type="tel"> → para telefone
-          
-        - <textarea> → para a mensagem
-          
-        - <input type="file"> → para enviar um currículo
-          
-        - <input type="submit"> → botão para enviar
-          
-          
+  ### Comandos usados no Git Bash:
+  - git init
+  - git branch -M main
+  - git add .
+  - git commit -m "comentário"
+  - git remote add origin "link do repositório"
+  - git push -u origin main
+     
