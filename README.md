@@ -1,4 +1,4 @@
-# formEmail
+# FormEmail
 
 ## Criação do formulário:
    ### Uso da tag form:
